@@ -34,7 +34,7 @@ else
 app.use("/api", apiRouter); //http://localhost/api api içeren bir adres gelirse router devreye girsin
 
 app.get("/", (req, res) => {
-    res.send("Hello World")
+    res.send("Hello World. I am Tuğçe")
 })
 
 app.listen(port, () => {
