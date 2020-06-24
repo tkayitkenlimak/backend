@@ -26,7 +26,7 @@ mongoose.connect(dbCon, {
 var con = mongoose.connection;
 
 if (!con)
-    console.log("veri tabanı bağlantısı başarısız")
+    console.log("veri tabanı bağlantısı başarısızzz")
 else
     console.log("veri tabanı bağlantısı başarılıııı")
 
