@@ -6,7 +6,7 @@ const dotEnv = require("dotenv");
 const apiRouter = require("./api-router");
 
 dotEnv.config();
-let port = process.env.port
+let port = process.env.PORT
 let dbCon = process.env.cloud_mongodb_con
 
 let app = new express();
