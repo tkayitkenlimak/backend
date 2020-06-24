@@ -46,3 +46,34 @@
 2020-06-24T07:00:44.250Z - debug:  [12092] Starting the validation of the collection. Url: 'https://tfs.infopark.com.tr/tfs/EDRIMS/'
 2020-06-24T07:01:05.278Z - error:  [12092] connect ETIMEDOUT 10.0.0.31:443 Error: Error: connect ETIMEDOUT 10.0.0.31:443
 2020-06-24T07:01:05.279Z - debug:  [12092] Error: connect ETIMEDOUT 10.0.0.31:443
+2020-06-24T07:14:34.316Z - info:   [12056] *** FOLDER: c:\Users\Tugce Kayitken\Desktop\Portal.Izın\Portal.Izın\backend ***
+2020-06-24T07:14:34.317Z - info:   [12056] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-24T07:14:34.318Z - debug:  [12056] Looking for an External Context at c:\Users\Tugce Kayitken\Desktop\Portal.Izın\Portal.Izın\backend
+2020-06-24T07:14:34.320Z - debug:  [12056] Found an External Context at c:\Users\Tugce Kayitken\Desktop\Portal.Izın\Portal.Izın\backend
+2020-06-24T07:14:34.320Z - debug:  [12056] Parsing values from repositoryInfo as string url
+2020-06-24T07:14:34.320Z - debug:  [12056] Could not parse repository url: undefined
+2020-06-24T07:14:34.584Z - debug:  [12056] Started ApplicationInsights telemetry
+2020-06-24T07:14:34.584Z - info:   [12056] Getting repository information with repositoryInfoClient
+2020-06-24T07:14:34.585Z - debug:  [12056] RemoteUrl = https://tfs.infopark.com.tr/tfs/EDRIMS/
+2020-06-24T07:14:34.585Z - debug:  [12056] Getting repository information for a TFVC repository at https://tfs.infopark.com.tr/tfs/EDRIMS/
+2020-06-24T07:14:34.585Z - debug:  [12056] Parsing values from repositoryInfo as string url
+2020-06-24T07:14:34.585Z - debug:  [12056] Starting the validation of the collection. Url: 'https://tfs.infopark.com.tr/tfs/EDRIMS/'
+2020-06-24T07:14:45.516Z - debug:  [12056] Reinitializing due to onDidChangeConfiguration
+2020-06-24T07:14:45.517Z - debug:  [12056] Polling interval value (minutes): 5
+2020-06-24T07:14:45.518Z - debug:  [12056] Polling interval must be greater than 10 minutes.
+2020-06-24T07:14:45.520Z - info:   [12056] *** FOLDER: c:\Users\Tugce Kayitken\Desktop\Portal.Izın\Portal.Izın\backend ***
+2020-06-24T07:14:45.520Z - info:   [12056] AzureReposVSCode/1.161.0 (VSCode 1.46.1; Windows_NT 10.0.18362; Node 12.8.1)
+2020-06-24T07:14:45.520Z - debug:  [12056] Looking for an External Context at c:\Users\Tugce Kayitken\Desktop\Portal.Izın\Portal.Izın\backend
+2020-06-24T07:14:45.520Z - debug:  [12056] Found an External Context at c:\Users\Tugce Kayitken\Desktop\Portal.Izın\Portal.Izın\backend
+2020-06-24T07:14:45.524Z - debug:  [12056] Parsing values from repositoryInfo as string url
+2020-06-24T07:14:45.524Z - debug:  [12056] Could not parse repository url: undefined
+2020-06-24T07:14:45.580Z - debug:  [12056] Started ApplicationInsights telemetry
+2020-06-24T07:14:45.581Z - info:   [12056] Getting repository information with repositoryInfoClient
+2020-06-24T07:14:45.581Z - debug:  [12056] RemoteUrl = https://tfs.infopark.com.tr/tfs/EDRIMS/
+2020-06-24T07:14:45.581Z - debug:  [12056] Getting repository information for a TFVC repository at https://tfs.infopark.com.tr/tfs/EDRIMS/
+2020-06-24T07:14:45.581Z - debug:  [12056] Parsing values from repositoryInfo as string url
+2020-06-24T07:14:45.582Z - debug:  [12056] Starting the validation of the collection. Url: 'https://tfs.infopark.com.tr/tfs/EDRIMS/'
+2020-06-24T07:14:56.212Z - error:  [12056] connect ETIMEDOUT 10.0.0.31:443 Error: Error: connect ETIMEDOUT 10.0.0.31:443
+2020-06-24T07:14:56.212Z - debug:  [12056] Error: connect ETIMEDOUT 10.0.0.31:443
+2020-06-24T07:15:06.601Z - error:  [12056] connect ETIMEDOUT 10.0.0.31:443 Error: Error: connect ETIMEDOUT 10.0.0.31:443
+2020-06-24T07:15:06.601Z - debug:  [12056] Error: connect ETIMEDOUT 10.0.0.31:443
