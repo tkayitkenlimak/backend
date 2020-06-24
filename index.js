@@ -26,9 +26,9 @@ mongoose.connect(dbCon, {
 var con = mongoose.connection;
 
 if (!con)
-    console.log("veri tabanı bağlantısı başarısızzzz")
+    console.log("veri tabanı bağlantısı başarısızz")
 else
-    console.log("veri tabanı bağlantısı başarılı")
+    console.log("veri tabanı bağlantısı başarılıııı")
 
 
 app.use("/api", apiRouter); //http://localhost/api api içeren bir adres gelirse router devreye girsin
