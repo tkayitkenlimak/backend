@@ -37,11 +37,7 @@ app.get("/", (req, res) => {
     res.send("Hello World")
 })
 
-const PORT = port || 3000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
-
-///app.listen(port, () => {
-//})
+app.listen(port, () => {
+    console.log("node js server çalışıyor...")
+})
 
