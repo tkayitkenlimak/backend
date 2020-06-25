@@ -3,6 +3,7 @@ const personelController = require("./controllers/personelController");
 const izinController = require("./controllers/izinController");
 const izinHakedisController = require("./controllers/izinHakedisController");
 const izinTipiController = require("./controllers/izinTipiController");
+const unvanController = require("./controllers/unvanController")
 
 const { check } = require("express-validator");
 
@@ -49,6 +50,13 @@ var izinTipiValidation  = new Array(
 );
 
 router.route("/izinTipi").get(izinTipiController.list).post([izinTipiValidation],izinTipiController.create);
+
+
+var unvanValidation  = new Array(
+    check("unvanAd").notEmpty().withMessage("Unvan boş geçilemez"),
+);
+
+router.route("/unvan").get(unvanController.list).post([unvanValidation],unvanController.create);
 
 
 module.exports = router;
