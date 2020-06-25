@@ -123,7 +123,7 @@ exports.update = (req, res) => {
 
 exports.delete = (req, res) => {
 
-    let id = req.params.personel_id;
+    let id = req.params.izin_id;
     Izın.findOneAndDelete({ _id: id }, (err, izin) => {
         if (err) {
             return new response(null, err).error500(res);
