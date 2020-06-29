@@ -3,6 +3,7 @@ const personelController = require("./controllers/personelController");
 const izinController = require("./controllers/izinController");
 const izinHakedisController = require("./controllers/izinHakedisController");
 const izinTipiController = require("./controllers/izinTipiController");
+const pdfController = require("./controllers/pdfController");
 
 const { check } = require("express-validator");
 
@@ -50,5 +51,6 @@ var izinTipiValidation  = new Array(
 
 router.route("/izinTipi").get(izinTipiController.list).post([izinTipiValidation],izinTipiController.create);
 
+router.route("/pdf/:izin_id").get(pdfController.list);
 
 module.exports = router;
