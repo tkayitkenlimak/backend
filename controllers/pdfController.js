@@ -54,7 +54,7 @@ exports.list = (req, res) => {
           // Catch compilation errors (errors caused by the compilation of the template : misplaced tags)
           errorHandler(error);
         }
-        console.log(izin1);
+       // console.log(izin1);
 
         let ts = Date.now();
         let date_ob = new Date(ts);
@@ -76,13 +76,13 @@ exports.list = (req, res) => {
           // Catch rendering errors (errors relating to the rendering of the template : angularParser throws an error)
           errorHandler(error);
         }
-        console.log(__dirname);
+        //console.log(__dirname);
         var buf = doc.getZip().generate({ type: "base64" });
 
-        fs.writeFile("result_document1.docx", buf, "base64", (error) => {
-          if (error) throw error;
-          console.log("Doc saved!");
-        });
+        // fs.writeFile("result_document1.docx", buf, "base64", (error) => {
+        //   if (error) throw error;
+        //   console.log("Doc saved!");
+        // });
         return new response(buf, null).success(res);
       }
     });
