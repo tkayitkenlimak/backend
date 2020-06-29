@@ -4,6 +4,7 @@ const izinController = require("./controllers/izinController");
 const izinHakedisController = require("./controllers/izinHakedisController");
 const izinTipiController = require("./controllers/izinTipiController");
 const pdfController = require("./controllers/pdfController");
+const unvanController = require("./controllers/unvanController");
 
 const { check } = require("express-validator");
 
@@ -52,5 +53,12 @@ var izinTipiValidation  = new Array(
 router.route("/izinTipi").get(izinTipiController.list).post([izinTipiValidation],izinTipiController.create);
 
 router.route("/pdf/:izin_id").get(pdfController.list);
+
+var unvanValidation  = new Array(
+    check("unvanAd").notEmpty().withMessage("Unvan boş geçilemez"),
+);
+
+router.route("/unvan").get(unvanController.list).post([unvanValidation],unvanController.create);
+
 
 module.exports = router;
