@@ -77,14 +77,46 @@ exports.list = (req, res) => {
           errorHandler(error);
         }
         //console.log(__dirname);
-        var buf = doc.getZip().generate({ type: "nodebuffer", mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document" });
+        var buf = doc.getZip().generate({ type: "base64", mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document", download:true });
 
-        fs.writeFile("result_document1.docx", buf, "base64", (error) => {
-          if (error) throw error;
-          console.log("Doc saved!");
-        });
-        return new response(buf, null).success(res);
+
+      
+        // fs.writeFile("result_document1.docx", buf, "base64", (error) => {
+        //   if (error) throw error;
+        //   console.log("Doc saved!");
+        // }, (success) => {
+        //   if (success)
+        //   res.download('result_document1.docx', 'report.docx')
+        // });
+     
+
+         res.download('result_document1.docx', 'report.docx');
+
+        // var file = fs.readFile('result_document1.docx');
+
+
+      //   fs.readFile('result_document1.docx', (err, data) => {
+      //     if (err) res.status(500).send(err);
+      //     res.contentType('application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+      //        .send(`data:application/vnd.openxmlformats-officedocument.wordprocessingml.document;base64,${new Buffer.from(data).toString('base64')}`);
+      // });
+
+
+//  res.setHeader('Content-Length', stat.size);
+// res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+// res.setHeader('Content-Disposition', 'attachment; filename=your_file_name');
+// res.write(file, 'binary');
+// res.end();
+
+        // var dd = new response();
+        // dd.setHeader'Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+        // dd.setData(buf);
+        // return dd;
+      //   var ss = new response(buf, null).success(res);
+      //   ss.contentType('application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+      // return ss;
         //return res.status(200).send(buf);
       }
     });
-};
+
+  };
