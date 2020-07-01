@@ -77,12 +77,12 @@ exports.list = (req, res) => {
           errorHandler(error);
         }
         //console.log(__dirname);
-        var buf = doc.getZip().generate({ type: "base64" });
+        var buf = doc.getZip().generate({ type: "nodebuffer", mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document" });
 
-        // fs.writeFile("result_document1.docx", buf, "base64", (error) => {
-        //   if (error) throw error;
-        //   console.log("Doc saved!");
-        // });
+        fs.writeFile("result_document1.docx", buf, "base64", (error) => {
+          if (error) throw error;
+          console.log("Doc saved!");
+        });
         return new response(buf, null).success(res);
         //return res.status(200).send(buf);
       }
