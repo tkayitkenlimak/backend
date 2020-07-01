@@ -6,6 +6,8 @@ var path = require("path");
 var izinController = require("../controllers/izinController");
 const Izin = require("../models/izin.model");
 
+
+
 function replaceErrors(key, value) {
   if (value instanceof Error) {
     return Object.getOwnPropertyNames(value).reduce(function (error, key) {
@@ -81,13 +83,10 @@ exports.list = (req, res) => {
 
 
       
-        // fs.writeFile("result_document1.docx", buf, "base64", (error) => {
-        //   if (error) throw error;
-        //   console.log("Doc saved!");
-        // }, (success) => {
-        //   if (success)
-        //   res.download('result_document1.docx', 'report.docx')
-        // });
+        fs.writeFileSync("result_document1.docx", buf, "base64", (error) => {
+          if (error) throw error;
+          console.log("Doc saved!");
+        });
      
 
          res.download('result_document1.docx', 'report.docx');
