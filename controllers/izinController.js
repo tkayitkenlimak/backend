@@ -90,7 +90,7 @@ exports.update = (req, res) => {
     }
 
 
-    Izın.findById(req.params.personel_id, (err, izin) => {
+    Izın.findById(req.params.izin_id, (err, izin) => {
         if (err) {
             return new response(null, err).error500(res);
         }
