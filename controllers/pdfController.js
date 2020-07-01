@@ -84,6 +84,7 @@ exports.list = (req, res) => {
         //   console.log("Doc saved!");
         // });
         return new response(buf, null).success(res);
+        //return res.status(200).send(buf);
       }
     });
 };
